@@ -1,0 +1,21 @@
+
+:global(.ant-notification-notice-message) {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    padding-bottom: -8px;
+    background-color: white;
+    color: #1890ff
+}
+
+:global(.ant-notification-notice-description) {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    padding-bottom: -8px;
+    background-color: white;
+    line-height: 14px;
+    color: black;
+}

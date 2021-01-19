@@ -1,0 +1,78 @@
+.element {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.element .form {
+  max-width: 1024px;
+  background-color: #fff;
+  margin-top: 40px;
+  min-height: 100px;
+  width: 90%;
+  padding: 20px;
+}
+
+.element .form * {
+  font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.element .form label {
+  font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.element .form :global(.ant-form-item-label) {
+  padding-bottom: 2px;
+}
+
+.element .form input {
+  font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.element .form textarea {
+  font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.element .form button {
+  font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.element .form :global(.ant-select-selector) {
+  font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.element .form :global(.ant-select-selector) input {
+  font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1em !important;
+  font-weight: 600;
+}
+
+.element :global(.ant-row) {
+  padding-bottom: 6px !important;
+}

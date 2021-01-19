@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Varta';
+    src: url('Varta-VariableFont_wght.ttf');
+    src: local('Varta'),
+        url('Varta-VariableFont_wght.ttf') format('truetype');
+    font-weight: 1 999;
+}

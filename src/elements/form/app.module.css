@@ -1,0 +1,112 @@
+.column {
+    width: 550px;
+}
+
+.column * {
+    /*font-family: 'Work Sans', sans-serif !important;*/
+    /*font-size: 13px !important;*/
+}
+
+.column :global(.ant-form-item-label)  {
+    margin-bottom: -6px !important;
+}
+
+.column :global(.ant-form-item-label) label {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    padding-bottom: -8px;
+    background-color: white;
+}
+
+.column :global(.ant-card-head-title) {
+    font-family: 'NotoSans', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    /* padding-top: 11px; */
+    padding: 0px;
+    padding-top: 7px;
+}
+
+.column :global(.ant-form-item-control-input-content) span {
+    flex: none;
+    font-family: 'Noto Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    padding-bottom: -8px;
+}
+
+.column h4:global(.ant-typography)  {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+    letter-spacing: -0.1px;
+    color:  #005aff;
+
+}
+
+.column :global(.ant-form-item-label) {
+    padding: 2px !important;
+}
+
+.column :global(.ant-form-item-control) {
+    padding-top: 1px !important;
+}
+
+.column :global(.ant-divider-horizontal) {
+    display: -ms-flexbox;
+    display: flex;
+    clear: both;
+    width: 100%;
+    min-width: 100%;
+    margin: 10px 0;
+}
+
+
+.column :global(.ant-form-vertical) :global(.ant-form-item) {
+    margin-bottom: 8px !important;
+}
+
+.column :global(.ant-input) {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-size: 13px !important;
+    color: black;
+    letter-spacing: -0.4px;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    line-height: 8px;
+    /* margin-top: 8px; */
+    padding-top: 5px;
+}
+
+.column :global(.ant-form-item-control-input) {
+    text-align: left !important;
+    color: black;
+}
+
+.column :global(.ant-form-item-control-input) span {
+    color: black;
+}
+
+.column :global(.ant-btn) span {
+    color: white !important;
+}
+
+.column .date {
+    color: #5a5a5a;
+    margin-top: 12px;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Noto Sans', sans-serif !important;
+    text-align: right;
+}
+
+.column :global(.ant-card-body) {
+    padding-top: 6px !important;
+}

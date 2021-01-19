@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-ExtraLight.eot');
+    src: local('Work Sans ExtraLight'), local('WorkSans-ExtraLight'),
+        url('subset-WorkSans-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-ExtraLight.woff2') format('woff2'),
+        url('subset-WorkSans-ExtraLight.woff') format('woff'),
+        url('subset-WorkSans-ExtraLight.ttf') format('truetype'),
+        url('subset-WorkSans-ExtraLight.svg#WorkSans-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-ExtraBold.eot');
+    src: local('Work Sans ExtraBold'), local('WorkSans-ExtraBold'),
+        url('subset-WorkSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-ExtraBold.woff2') format('woff2'),
+        url('subset-WorkSans-ExtraBold.woff') format('woff'),
+        url('subset-WorkSans-ExtraBold.ttf') format('truetype'),
+        url('subset-WorkSans-ExtraBold.svg#WorkSans-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-LightItalic.eot');
+    src: local('Work Sans Light Italic'), local('WorkSans-LightItalic'),
+        url('subset-WorkSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-LightItalic.woff2') format('woff2'),
+        url('subset-WorkSans-LightItalic.woff') format('woff'),
+        url('subset-WorkSans-LightItalic.ttf') format('truetype'),
+        url('subset-WorkSans-LightItalic.svg#WorkSans-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-ExtraBoldItalic.eot');
+    src: local('Work Sans ExtraBold Italic'), local('WorkSans-ExtraBoldItalic'),
+        url('subset-WorkSans-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('subset-WorkSans-ExtraBoldItalic.woff') format('woff'),
+        url('subset-WorkSans-ExtraBoldItalic.ttf') format('truetype'),
+        url('subset-WorkSans-ExtraBoldItalic.svg#WorkSans-ExtraBoldItalic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-Light.eot');
+    src: local('Work Sans Light'), local('WorkSans-Light'),
+        url('subset-WorkSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-Light.woff2') format('woff2'),
+        url('subset-WorkSans-Light.woff') format('woff'),
+        url('subset-WorkSans-Light.ttf') format('truetype'),
+        url('subset-WorkSans-Light.svg#WorkSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-BlackItalic.eot');
+    src: local('Work Sans Black Italic'), local('WorkSans-BlackItalic'),
+        url('subset-WorkSans-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-BlackItalic.woff2') format('woff2'),
+        url('subset-WorkSans-BlackItalic.woff') format('woff'),
+        url('subset-WorkSans-BlackItalic.ttf') format('truetype'),
+        url('subset-WorkSans-BlackItalic.svg#WorkSans-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-Bold.eot');
+    src: local('Work Sans Bold'), local('WorkSans-Bold'),
+        url('subset-WorkSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-Bold.woff2') format('woff2'),
+        url('subset-WorkSans-Bold.woff') format('woff'),
+        url('subset-WorkSans-Bold.ttf') format('truetype'),
+        url('subset-WorkSans-Bold.svg#WorkSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-Medium.eot');
+    src: local('Work Sans Medium'), local('WorkSans-Medium'),
+        url('subset-WorkSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-Medium.woff2') format('woff2'),
+        url('subset-WorkSans-Medium.woff') format('woff'),
+        url('subset-WorkSans-Medium.ttf') format('truetype'),
+        url('subset-WorkSans-Medium.svg#WorkSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-Thin.eot');
+    src: local('Work Sans Thin'), local('WorkSans-Thin'),
+        url('subset-WorkSans-Thin.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-Thin.woff2') format('woff2'),
+        url('subset-WorkSans-Thin.woff') format('woff'),
+        url('subset-WorkSans-Thin.ttf') format('truetype'),
+        url('subset-WorkSans-Thin.svg#WorkSans-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-Regular.eot');
+    src: local('Work Sans Regular'), local('WorkSans-Regular'),
+        url('subset-WorkSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-Regular.woff2') format('woff2'),
+        url('subset-WorkSans-Regular.woff') format('woff'),
+        url('subset-WorkSans-Regular.ttf') format('truetype'),
+        url('subset-WorkSans-Regular.svg#WorkSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-MediumItalic.eot');
+    src: local('Work Sans Medium Italic'), local('WorkSans-MediumItalic'),
+        url('subset-WorkSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-MediumItalic.woff2') format('woff2'),
+        url('subset-WorkSans-MediumItalic.woff') format('woff'),
+        url('subset-WorkSans-MediumItalic.ttf') format('truetype'),
+        url('subset-WorkSans-MediumItalic.svg#WorkSans-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-BoldItalic.eot');
+    src: local('Work Sans Bold Italic'), local('WorkSans-BoldItalic'),
+        url('subset-WorkSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-BoldItalic.woff2') format('woff2'),
+        url('subset-WorkSans-BoldItalic.woff') format('woff'),
+        url('subset-WorkSans-BoldItalic.ttf') format('truetype'),
+        url('subset-WorkSans-BoldItalic.svg#WorkSans-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-ThinItalic.eot');
+    src: local('Work Sans Thin Italic'), local('WorkSans-ThinItalic'),
+        url('subset-WorkSans-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-ThinItalic.woff2') format('woff2'),
+        url('subset-WorkSans-ThinItalic.woff') format('woff'),
+        url('subset-WorkSans-ThinItalic.ttf') format('truetype'),
+        url('subset-WorkSans-ThinItalic.svg#WorkSans-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-Black.eot');
+    src: local('Work Sans Black'), local('WorkSans-Black'),
+        url('subset-WorkSans-Black.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-Black.woff2') format('woff2'),
+        url('subset-WorkSans-Black.woff') format('woff'),
+        url('subset-WorkSans-Black.ttf') format('truetype'),
+        url('subset-WorkSans-Black.svg#WorkSans-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-ExtraLightItalic.eot');
+    src: local('Work Sans ExtraLight Italic'), local('WorkSans-ExtraLightItalic'),
+        url('subset-WorkSans-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-ExtraLightItalic.woff2') format('woff2'),
+        url('subset-WorkSans-ExtraLightItalic.woff') format('woff'),
+        url('subset-WorkSans-ExtraLightItalic.ttf') format('truetype'),
+        url('subset-WorkSans-ExtraLightItalic.svg#WorkSans-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-SemiBoldItalic.eot');
+    src: local('Work Sans SemiBold Italic'), local('WorkSans-SemiBoldItalic'),
+        url('subset-WorkSans-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-SemiBoldItalic.woff2') format('woff2'),
+        url('subset-WorkSans-SemiBoldItalic.woff') format('woff'),
+        url('subset-WorkSans-SemiBoldItalic.ttf') format('truetype'),
+        url('subset-WorkSans-SemiBoldItalic.svg#WorkSans-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-Italic.eot');
+    src: local('Work Sans Italic'), local('WorkSans-Italic'),
+        url('subset-WorkSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-Italic.woff2') format('woff2'),
+        url('subset-WorkSans-Italic.woff') format('woff'),
+        url('subset-WorkSans-Italic.ttf') format('truetype'),
+        url('subset-WorkSans-Italic.svg#WorkSans-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('subset-WorkSans-SemiBold.eot');
+    src: local('Work Sans SemiBold'), local('WorkSans-SemiBold'),
+        url('subset-WorkSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('subset-WorkSans-SemiBold.woff2') format('woff2'),
+        url('subset-WorkSans-SemiBold.woff') format('woff'),
+        url('subset-WorkSans-SemiBold.ttf') format('truetype'),
+        url('subset-WorkSans-SemiBold.svg#WorkSans-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
