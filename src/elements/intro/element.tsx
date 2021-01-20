@@ -455,7 +455,7 @@ export default function Element() {
                     </Form.Item>
                     <Form.Item
                       label="Ingrese la fecha de nacimiento"
-                      name={[field.name, "edad"]}
+                      name={[field.name, "nac"]}
                       rules={[
                         {
                           required: true,
