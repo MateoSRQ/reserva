@@ -82,7 +82,8 @@ export default function Element() {
 
   const handleChangeEvent = async (value: any) => {
     let data = await axios.get(
-      `/places/places?place=${sede}&name=${value}&quota=${quota}`
+      process.env.REACT_APP_ENDPOINT +
+        `/places/places?place=${sede}&name=${value}&quota=${quota}`
     );
     let resdata = _.uniq(_.map(data.data, "date"));
     let date_options = resdata.map((option: any) => {
@@ -97,7 +98,8 @@ export default function Element() {
   const handleChangeDate = async (value: any) => {
     console.log(value);
     let data = await axios.get(
-      `/places/places?place=${sede}&name=${event}&date=${value}&quota=${quota}`
+      process.env.REACT_APP_ENDPOINT +
+        `/places/places?place=${sede}&name=${event}&date=${value}&quota=${quota}`
     );
     //let resdata = _.uniq(_.map(data.data, "hours"));
     let hour_options = data.data.map((option: any) => {
@@ -117,7 +119,10 @@ export default function Element() {
     if (!checkbox4) {
       setModalWarning(true);
     } else {
-      let response = await axios.post(`/reservas`, values);
+      let response = await axios.post(
+        process.env.REACT_APP_ENDPOINT + `/reservas`,
+        values
+      );
       if (response.data === "already there") {
         setModalNok(true);
       } else {
