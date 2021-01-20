@@ -600,8 +600,8 @@ export default function Element() {
               onChange={checkboxChange3}
             >
               Acepto recibir noticias e información sobre eventos culturales,
-              deportivos y otros relacionados a Lima 2019, de parte de Lima
-              2019, y sus organizadores y patrocinadores.
+              deportivos y otros relacionados al Proyecto Legado, de parte del
+              Proyecto Legado, sus organizadores y patrocinadores.
             </Checkbox>
           </Form.Item>
           <Form.Item name="ddjj">
