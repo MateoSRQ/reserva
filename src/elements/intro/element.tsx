@@ -114,7 +114,7 @@ export default function Element() {
 
   const onFinish = async (values: any) => {
     console.log("Success:", values);
-    if (checkbox4) {
+    if (!checkbox4) {
       setModalWarning(true);
     } else {
       let response = await axios.post(`/reservas`, values);
