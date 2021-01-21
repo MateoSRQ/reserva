@@ -21,6 +21,7 @@ import distritos from "../../data/distritos.json";
 import TextArea from "antd/es/input/TextArea";
 import "moment/locale/es";
 import locale from "antd/es/date-picker/locale/es_ES";
+import { format, parse } from "date-fns";
 
 const { Title } = Typography;
 const { Option } = Select;
@@ -87,7 +88,8 @@ export default function Element() {
     );
     let resdata = _.uniq(_.map(data.data, "date"));
     let date_options = resdata.map((option: any) => {
-      return <Option value={option}>{option}</Option>;
+      let x = format(parse(option, "yyyy-mm-dd", new Date()), "dd/mm/yyyy");
+      return <Option value={option}>{x}</Option>;
     });
     setEvent(value);
     setDate(null);
@@ -292,7 +294,11 @@ export default function Element() {
               },
             ]}
           >
-            <DatePicker style={{ width: "100%" }} locale={locale} />
+            <DatePicker
+              style={{ width: "100%" }}
+              locale={locale}
+              format={"DD/MM/YYYY"}
+            />
           </Form.Item>
           <Form.Item
             label="Ingrese su dirección"
@@ -463,7 +469,11 @@ export default function Element() {
                         },
                       ]}
                     >
-                      <DatePicker style={{ width: "100%" }} locale={locale} />
+                      <DatePicker
+                        style={{ width: "100%" }}
+                        locale={locale}
+                        format={"DD/MM/YYYY"}
+                      />
                     </Form.Item>
                     <Form.Item label=" ">
                       <Button
