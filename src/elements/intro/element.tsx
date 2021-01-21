@@ -525,7 +525,7 @@ export default function Element() {
             </Select>
           </Form.Item>
 
-          <Form.Item label="Evento">
+          <Form.Item label="Actividad">
             <Select size="large" onChange={handleChangeEvent} value={event}>
               {events}
             </Select>
