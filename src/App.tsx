@@ -10,6 +10,7 @@ import {
 import Intro from "./elements/intro/element";
 import Formulario from "./elements/form/registro";
 import Formulario2 from "./elements/form2/registro";
+import Reclamo from "./elements/reclamo";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         </Route>
         <Route exact path="/ficha">
           <Formulario2 />
+        </Route>
+        <Route exact path="/reclamo">
+          <Reclamo />
         </Route>
       </Switch>
     </Router>

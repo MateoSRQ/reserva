@@ -650,8 +650,9 @@ export default function Element() {
         closable={false}
       >
         <p>
-          En breve, un mensaje de confirmación al correo electrónico señalado
-          confirmará su reserva. Lo esperamos!
+          En breve le llegará un mensaje de confirmación a su correo
+          electrónico. ¡Lo esperamos! Recuerde llevar su DNI y el de sus
+          acompañantes para el ingreso a la Sede.
         </p>
       </Modal>
       <Modal
