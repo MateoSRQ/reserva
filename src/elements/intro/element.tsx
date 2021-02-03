@@ -37,6 +37,7 @@ export default function Element() {
   const [hours, setHours] = useState<any | null>(null);
   const [hour, setHour] = useState<any | null>(null);
   const [quota, setQuota] = useState<any>(1);
+  const [max, setMax] = useState<any>(0);
 
   const [modalOk, setModalOk] = useState<boolean>(false);
   const [modalNok, setModalNok] = useState<boolean>(false);
@@ -80,7 +81,6 @@ export default function Element() {
     setSede(value);
     setEvents(event_options);
   };
-
   const handleChangeEvent = async (value: any) => {
     let data = await axios.get(
       process.env.REACT_APP_ENDPOINT +
@@ -96,24 +96,28 @@ export default function Element() {
     form.setFieldsValue({ event_id: null });
     setDates(date_options);
   };
-
   const handleChangeDate = async (value: any) => {
-    console.log(value);
     let data = await axios.get(
       process.env.REACT_APP_ENDPOINT +
         `/places/places?place=${sede}&name=${event}&date=${value}&quota=${quota}`
     );
-    //let resdata = _.uniq(_.map(data.data, "hours"));
     let hour_options = data.data.map((option: any) => {
       return (
-        <Option value={option.id}>
+        <Option key={JSON.stringify(option)} value={option.id}>
           {option.hourBegin} - {option.hourEnd}
         </Option>
       );
     });
+
     setDate(value);
     form.setFieldsValue({ event_id: null });
     setHours(hour_options);
+  };
+  const handleHourChange = async (value: any, index: any) => {
+    const data = JSON.parse(index.key);
+    console.log("handleHourChange");
+    let _max = data.quota < data.hi ? data.quota : data.hi;
+    setMax(_max);
   };
 
   const onFinish = async (values: any) => {
@@ -133,36 +137,28 @@ export default function Element() {
       console.log(response.data);
     }
   };
-
   const onValuesChange = (values: any) => {
     //console.log("Change:", values);
     //console.log(form.getFieldsError());\
   };
-
   const onFinishFailed = (errorInfo: any) => {
     console.log("Failed:", errorInfo);
   };
-
   const checkboxChange1 = (value: any) => {
     setCheckbox1(value.target.checked);
   };
-
   const checkboxChange2 = (value: any) => {
     setCheckbox2(value.target.checked);
   };
-
   const checkboxChange3 = (value: any) => {
     setCheckbox3(value.target.checked);
   };
-
   const checkboxChange4 = (value: any) => {
     setCheckbox4(value.target.checked);
   };
-
   const options = distritos.data.map((option: any) => {
     return <Option value={option}>{option}</Option>;
   });
-
   return (
     <div className={styles.element}>
       <div className={styles.form}>
@@ -503,8 +499,12 @@ export default function Element() {
                     type="primary"
                     size="large"
                     onClick={() => {
-                      add();
-                      setQuota(quota + 1);
+                      console.log("max: " + max);
+                      console.log("quota: " + quota);
+                      if (quota < max) {
+                        add();
+                        setQuota(quota + 1);
+                      }
                     }}
                     block
                     icon={<PlusOutlined />}
@@ -557,7 +557,7 @@ export default function Element() {
               },
             ]}
           >
-            <Select size="large" value={hour}>
+            <Select size="large" value={hour} onChange={handleHourChange}>
               {hours}
             </Select>
           </Form.Item>

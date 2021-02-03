@@ -8,6 +8,7 @@ import styles from "./styles.module.css";
 import "antd/dist/antd.compact.min.css";
 import { Upload, message } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
+import { parse, format } from "date-fns";
 
 import { IconContext } from "react-icons";
 import { MdApps } from "react-icons/md";
@@ -25,8 +26,11 @@ function Page() {
 
   const onFinish = (e: any) => {
     console.log("onFinish");
-    e.fecha = e.fecha.toString();
-    e.file = file;
+    e.fecha = e.fecha.format("YYYY-MM-DD");
+    if (e.archivo?.file?.response?.coded) {
+      e.file = e.archivo?.file.response.coded;
+    }
+    console.log(e);
   };
   return (
     <div className={styles.page}>
