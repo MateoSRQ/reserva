@@ -38,6 +38,7 @@ export default function Element() {
   const [hour, setHour] = useState<any | null>(null);
   const [quota, setQuota] = useState<any>(1);
   const [max, setMax] = useState<any>(0);
+  const [min, setMin] = useState<any>(10000);
 
   const [modalOk, setModalOk] = useState<boolean>(false);
   const [modalNok, setModalNok] = useState<boolean>(false);
@@ -116,8 +117,10 @@ export default function Element() {
   const handleHourChange = async (value: any, index: any) => {
     const data = JSON.parse(index.key);
     console.log("handleHourChange");
+    console.log(data);
     let _max = data.quota < data.hi ? data.quota : data.hi;
     setMax(_max);
+    setMin(data.low);
   };
 
   const onFinish = async (values: any) => {
@@ -369,8 +372,26 @@ export default function Element() {
             DATOS DE ACOMPAÑANTES
           </Title>
 
-          <Form.List name="grupo">
-            {(fields, { add, remove }) => (
+          <Form.List
+            name="grupo"
+            rules={[
+              {
+                validator: async (_, names) => {
+                  console.log(min);
+                  if (!names || names.length < min - 1) {
+                    return Promise.reject(
+                      new Error(
+                        "Por favor, seleccione al menos " +
+                          (min - 1) +
+                          " acompañante(s)."
+                      )
+                    );
+                  }
+                },
+              },
+            ]}
+          >
+            {(fields, { add, remove }, { errors }) => (
               <>
                 {fields.map((field, index) => (
                   <div
@@ -512,6 +533,7 @@ export default function Element() {
                     Agregar personas
                   </Button>
                 </Form.Item>
+                <Form.ErrorList errors={errors} />
               </>
             )}
           </Form.List>
