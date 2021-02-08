@@ -510,9 +510,15 @@ export default function Element() {
                 <Form.Item
                   extra={
                     <p style={{ fontStyle: "italic" }}>
-                      Ingrese los datos de los menores de edad que serán parte
-                      del grupo. Los miembros del grupo mayores de edad deberán
-                      llenar su reserva independientemente.
+                      Ingrese los datos de las personas que serán parte del
+                      grupo, que incluye:
+                      <ul>
+                        <li>Niños menores de 14.</li>
+                        <li>
+                          Los integrantes del grupo que usarán una cancha
+                          deportiva según el aforo de la misma.
+                        </li>
+                      </ul>
                     </p>
                   }
                 >
