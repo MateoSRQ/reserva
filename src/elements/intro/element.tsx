@@ -378,7 +378,7 @@ export default function Element() {
               {
                 validator: async (_, names) => {
                   console.log(min);
-                  if (!names || names.length < min - 1) {
+                  if ((!names || names.length < min - 1) && min > 1) {
                     return Promise.reject(
                       new Error(
                         "Por favor, seleccione al menos " +
