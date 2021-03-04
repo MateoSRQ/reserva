@@ -193,12 +193,20 @@ export default function Element() {
             marginRight: "40px",
           }}
         >
-          Para ingresar al Complejo{" "}
-          <i>Deportivo Andrés Avelino Cáceres de Villa María del Triunfo</i>,
-          sede deportiva a cargo del Proyecto Legado y realizar alguna actividad
-          deportiva o recreativa, debes completar este formulario con 24 horas
-          de anticipación (o el mismo día si el aforo no ha sido completado).
-          Tener en cuenta que:
+          IMPORTANTE Si desea realizar alguna actividad deportiva o recreativa
+          en el{" "}
+          <b>
+            <i>
+              Complejo Deportivo Andrés Avelino Cáceres de Villa María del
+              Triunfo
+            </i>
+          </b>
+          , sede a cargo del Proyecto Legado, tendrá que llenar este formulario
+          con{" "}
+          <b>
+            <i>24 horas de anticipación</i>
+          </b>{" "}
+          (o el mismo día si todavía hay aforo ). Tener en cuenta que:
         </p>
         <ol
           style={{
@@ -208,32 +216,40 @@ export default function Element() {
           }}
         >
           <li>
-            Lunes, miércoles y viernes, podrás hacer la reserva para pista
-            atlética o ciclovía.
+            Lunes, miércoles y viernes, podrá utilizar la{" "}
+            <b>
+              <i>pista atlética</i>
+            </b>{" "}
+            o{" "}
+            <b>
+              <i>ciclovía.</i>
+            </b>
           </li>
           <li>
-            Martes y jueves, podrás hacer la reserva para plaza de las banderas.
+            Martes y jueves, podrá hacer la reserva para{" "}
+            <b>
+              <i>Plaza de las Banderas.</i>
+            </b>
           </li>
           <li>
-            Toda persona que desee ingresar a la sede, debe ser registradas en
-            el formulario de reserva, por lo que si un menor de edad (de 0 meses
-            hasta 17 años) asistirá contigo, tambien debes incluirlo en el campo
-            de "Otros usuarios..."
+            Si lo acompaña un menor de edad (de 0 meses hasta 17 años) tambien
+            deberá incluirlo en el formulario, accediendo al campo: "Otros
+            usuarios...".
           </li>
           <li>
-            Para ingresar a la sede, todas la personas registradas en el
-            formulario de reserva, deben presentar en puerta el DNI/CE, incluido
-            los menores de edad.
+            Una vez registrada su solicitud en el formulario, recibirá un correo
+            electronico de confirmació de la reserva.
+          </li>
+          <li>
+            Para ingresar a la sede debe presentar en la puerta su DNI/CE, y la
+            del menor de edad.
           </li>
           <li>
             Menores de 14 años deben ser acompañados obligatoriamente por un
             adulto responsable.
           </li>
-          <li>El ingreso será desde 10 minutos antes de la hora reservada.</li>
-          <li>
-            Luego de iniciado el horario reservado, la tolerancia de ingreso es
-            de máximo 30 minutos.
-          </li>
+          <li>Llegar 10 minutos antes de la hora reservada.</li>
+          <li>La tolerancia de ingreso es de máximo 30 minutos</li>
         </ol>
         <Divider type="horizontal" style={{ borderColor: "#2f60be44" }} />
         <Form
@@ -256,7 +272,7 @@ export default function Element() {
             DATOS GENERALES
           </Title>
           <Form.Item
-            label="Ingrese su nombre completo"
+            label="Nombres"
             name="nombres"
             rules={[
               {
@@ -268,7 +284,7 @@ export default function Element() {
             <Input />
           </Form.Item>
           <Form.Item
-            label="Ingrese su apellido paterno"
+            label="Apellido paterno"
             name="apellido_paterno"
             rules={[
               {
@@ -280,7 +296,7 @@ export default function Element() {
             <Input />
           </Form.Item>
           <Form.Item
-            label="Ingrese su apellido materno"
+            label="Apellido materno"
             name="apellido_materno"
             rules={[
               {
@@ -292,7 +308,7 @@ export default function Element() {
             <Input />
           </Form.Item>
           <Form.Item
-            label="Seleccione el tipo de documento"
+            label="Tipo de documento de identidad"
             name="tipodoc"
             rules={[
               {
@@ -308,7 +324,7 @@ export default function Element() {
             </Select>
           </Form.Item>
           <Form.Item
-            label="Ingrese su número de documento de identidad"
+            label="Número de documento de identidad"
             name="nrodocumento"
             rules={[
               {
@@ -320,7 +336,7 @@ export default function Element() {
             <Input />
           </Form.Item>
           <Form.Item
-            label="Seleccione su sexo"
+            label="Sexo"
             name="sexo"
             rules={[
               {
@@ -335,7 +351,7 @@ export default function Element() {
             </Select>
           </Form.Item>
           <Form.Item
-            label="Ingrese su fecha de nacimiento"
+            label="Fecha de nacimiento"
             name="nac"
             rules={[
               {
@@ -351,7 +367,7 @@ export default function Element() {
             />
           </Form.Item>
           <Form.Item
-            label="Ingrese su dirección"
+            label="Dirección"
             name="direccion"
             rules={[
               {
@@ -363,7 +379,7 @@ export default function Element() {
             <TextArea rows={3} />
           </Form.Item>
           <Form.Item
-            label="Ingrese su distrito de residencia"
+            label="Distrito de residencia"
             name="distrito"
             rules={[
               {
@@ -377,7 +393,7 @@ export default function Element() {
             </Select>
           </Form.Item>
           <Form.Item
-            label="Ingrese su correo electrónico"
+            label="Correo electrónico"
             name="email"
             rules={[
               {
@@ -393,7 +409,7 @@ export default function Element() {
             <Input />
           </Form.Item>
           <Form.Item
-            label="Ingrese su número de teléfono"
+            label="Número de teléfono"
             name="phone"
             rules={[
               {
@@ -409,6 +425,19 @@ export default function Element() {
           >
             <Input />
           </Form.Item>
+          <Divider type="horizontal" style={{ borderColor: "#2f60be44" }} />
+          <Title
+            style={{
+              textAlign: "center",
+              color: "#454545",
+              marginTop: "-15px",
+              textTransform: "uppercase",
+              letterSpacing: "0.4px",
+            }}
+            level={3}
+          >
+            INGRESE LOS DATOS DE LOS OTROS USUARIOS QUE ASISTIRÁN A LA SEDE
+          </Title>
           <Divider type="horizontal" style={{ borderColor: "#2f60be44" }} />
           <Title
             style={{
@@ -721,8 +750,8 @@ export default function Element() {
               onChange={checkboxChange3}
             >
               Acepto recibir noticias e información sobre eventos culturales,
-              deportivos y otros relacionados al Proyecto Legado, de parte del
-              Proyecto Legado, sus organizadores y patrocinadores.
+              deportivos y otros relacionados al Proyecto Legado, sus
+              organizadores y patrocinadores.
             </Checkbox>
           </Form.Item>
           <Form.Item name="ddjj">
