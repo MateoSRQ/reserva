@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from "react";
 import {
-  Form,
-  Input,
   Button,
-  Divider,
-  Select,
-  Image,
   Checkbox,
-  Modal,
   DatePicker,
+  Divider,
+  Form,
+  Image,
+  Input,
+  Modal,
+  Select,
+  Typography,
 } from "antd";
-import { PlusOutlined, MinusCircleOutlined } from "@ant-design/icons";
+import { MinusCircleOutlined, PlusOutlined } from "@ant-design/icons";
 import axios from "axios";
 import _ from "lodash";
 
 import "antd/dist/antd.css";
 import styles from "./element.module.css";
-import { Typography } from "antd";
 import distritos from "../../data/distritos.json";
 import TextArea from "antd/es/input/TextArea";
 import "moment/locale/es";
@@ -51,6 +51,7 @@ export default function Element() {
 
   useEffect(() => {
     console.log("START");
+
     async function loadSedes() {
       console.log("loadsedes");
       let data = await axios.get(
@@ -62,6 +63,7 @@ export default function Element() {
       });
       setSedes(sedes_options);
     }
+
     loadSedes();
   }, []);
 
@@ -169,7 +171,7 @@ export default function Element() {
           <Image width="260px" src={`./logo.png`} />
         </div>
         <Title style={{ textAlign: "center", color: "#06356d" }} level={2}>
-          Solicitud de Reserva y Declaración de Conformidad
+          Solicitud de reserva de espacios deportivos y no deportivos
         </Title>
         <Title
           style={{
@@ -181,9 +183,58 @@ export default function Element() {
           }}
           level={4}
         >
-          Proyecto Legado Juegos Panamericanos
+          PROYECTO LEGADO JUEGOS PANAMERICANOS Y PARAPANAMERICANOS
         </Title>
-
+        <Divider type="horizontal" style={{ borderColor: "#2f60be44" }} />
+        <p
+          style={{
+            textAlign: "justify",
+            marginLeft: "40px",
+            marginRight: "40px",
+          }}
+        >
+          Para ingresar al Complejo{" "}
+          <i>Deportivo Andrés Avelino Cáceres de Villa María del Triunfo</i>,
+          sede deportiva a cargo del Proyecto Legado y realizar alguna actividad
+          deportiva o recreativa, debes completar este formulario con 24 horas
+          de anticipación (o el mismo día si el aforo no ha sido completado).
+          Tener en cuenta que:
+        </p>
+        <ol
+          style={{
+            textAlign: "justify",
+            marginLeft: "20px",
+            marginRight: "40px",
+          }}
+        >
+          <li>
+            Lunes, miércoles y viernes, podrás hacer la reserva para pista
+            atlética o ciclovía.
+          </li>
+          <li>
+            Martes y jueves, podrás hacer la reserva para plaza de las banderas.
+          </li>
+          <li>
+            Toda persona que desee ingresar a la sede, debe ser registradas en
+            el formulario de reserva, por lo que si un menor de edad (de 0 meses
+            hasta 17 años) asistirá contigo, tambien debes incluirlo en el campo
+            de "Otros usuarios..."
+          </li>
+          <li>
+            Para ingresar a la sede, todas la personas registradas en el
+            formulario de reserva, deben presentar en puerta el DNI/CE, incluido
+            los menores de edad.
+          </li>
+          <li>
+            Menores de 14 años deben ser acompañados obligatoriamente por un
+            adulto responsable.
+          </li>
+          <li>El ingreso será desde 10 minutos antes de la hora reservada.</li>
+          <li>
+            Luego de iniciado el horario reservado, la tolerancia de ingreso es
+            de máximo 30 minutos.
+          </li>
+        </ol>
         <Divider type="horizontal" style={{ borderColor: "#2f60be44" }} />
         <Form
           form={form}
@@ -369,7 +420,7 @@ export default function Element() {
             }}
             level={4}
           >
-            DATOS DE ACOMPAÑANTES
+            AGREGAR PERSONAS (Adultos y menores de edad según corresponda)
           </Title>
 
           <Form.List
@@ -509,17 +560,49 @@ export default function Element() {
                 ))}
                 <Form.Item
                   extra={
-                    <p style={{ fontStyle: "italic" }}>
-                      Ingrese los datos de las personas que serán parte del
-                      grupo, que incluye:
-                      <ul>
-                        <li>Niños menores de 14.</li>
+                    <div>
+                      <Divider
+                        type="horizontal"
+                        style={{ borderColor: "#2f60be44" }}
+                      />
+                      <p
+                        style={{
+                          textAlign: "justify",
+                          marginLeft: "40px",
+                          marginRight: "40px",
+                        }}
+                      >
+                        Considerar lo siguiente:
+                      </p>
+                      <ol
+                        style={{
+                          textAlign: "justify",
+                          marginLeft: "20px",
+                          marginRight: "40px",
+                        }}
+                      >
                         <li>
-                          Los integrantes del grupo que usarán una cancha
-                          deportiva según el aforo de la misma.
+                          Para el uso de la ciclovia la edad mínima es de 6
+                          años.
                         </li>
-                      </ul>
-                    </p>
+                        <li>Uso obligatorio de casco para ciclovía.</li>
+                        <li>
+                          Uso obligatorio de zapatillas para la pista atlética.
+                        </li>
+                        <li>
+                          Prohibido el uso de zapatillas de clavos en la pista
+                          atlética.
+                        </li>
+                        <li>El aforo es limitado.</li>
+                        <li>Uso obligatorio de mascarilla.</li>
+                        <li>Cumplir con distanciamiento físico recomendado.</li>
+                        <li>
+                          Cumplir con los horarios establecidos, los cuales son
+                          de una hora.
+                        </li>
+                        <li>Prohibido consumir alimentos dentro de la sede.</li>
+                      </ol>
+                    </div>
                   }
                 >
                   <Button
